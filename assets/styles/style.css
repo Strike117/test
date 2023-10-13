@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+}
+.principal {
+  position: relative;
+  min-height: 100vh;
+  align-self: stretch;
+  background: linear-gradient(
+          180deg,
+          rgba(4, 35, 84, 0.95) 0%,
+          rgba(0, 0, 0, 0) 100%
+  ),
+  url("../image/headerFondo.jpg"), lightgray 50% / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 100px;
+  width: 100vw;
+}
+.nav {
+  display: flex;
+  /* width: 100vw; */
+  height: 104px;
+  padding: 23px 197.999px 23px 171px;
+  align-items: center;
+  gap: 20%;
+  /* gap: 470px; */
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.nav h2 {
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation li {
+  list-style: none;
+}
+.navigation li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.principal {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 167px;
+}
+
+.hero h1 {
+  width: 900px;
+  height: 170px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px; /* 137.931% */
+  letter-spacing: 0.2px;
+}
+
+.hero h4 {
+  width: 80%;
+  height: 94px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.2px;
+}
+
+.downloads {
+  display: flex;
+  gap: 8px;
+}
+
+.downloads button {
+  display: inline-flex;
+  padding: 18px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--muted-color, #bdbdbd);
+  background: var(--dark-background-color, #252b42);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  width: 250px;
+  height: 88px;
+}
+
+.downloads button:hover {
+  cursor: pointer;
+}
+
+.downloads img {
+  width: 33px;
+  height: 38px;
+}
+
+.download-on-the {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: 0.2px;
+}
+
+.store {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  letter-spacing: 0.2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    display: flex;
+    width: 100%;
+    height: 104px;
+    padding: 30px;
+    align-items: center;
+    color: #fff;
+    gap: 20%;
+  }
+
+  header {
+    padding: 15px 50px;
+  }
+
+  .principal {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero h4 {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    width: 100%;
+    height: 104px;
+    padding: 30px;
+    align-items: center;
+    color: #fff;
+    gap: 10%;
+  }
+  .principal {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .hero {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    width: 100%;
+    line-height: 60px;
+  }
+
+  .hero h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal {
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+    height: 104px;
+    padding: 10px;
+    align-items: center;
+    color: #fff;
+    gap: 5%;
+  }
+
+  .hero {
+    padding: 10px;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .hero h1{
+    width: 100%;
+    line-height: 55px;
+  }
+
+  .downloads {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .downloads button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .principal {
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+  }
+  .nav {
+    display: flex;
+    width: 100%;
+    height: 104px;
+    padding: 10px;
+    align-items: center;
+    color: #fff;
+    gap: 1%;
+  }
+
+  .hero {
+    padding: 10px;
+    width: 100%;
+    gap: 100px;
+  }
+
+  .hero h1{
+    width: 100%;
+    line-height: 55px;
+  }
+
+  .downloads {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .downloads button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Section Common Styles */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+}
+
+
+section h1.title {
+  color: #042354;
+  font: bold 58px 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+}
+
+
+
+.grid{
+  width:100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 90px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.container .card{
+  flex:1;
+  width: 330px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+.card img{
+  width: 100%;
+  height: auto;
+}
+.card-content{
+  padding: 24px;
+}
+.card-content h3{
+  color: #042354;
+  font: bold 24px 'Montserrat', sans-serif;
+  margin-bottom: 32px;
+  text-align: left;
+  margin: 15px 0px;
+}
+
+.card-content p{
+  color: #737373;
+  font: medium 16px 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.card-content .btn{
+  display: inline-block;
+  padding: 18px 16px;
+  background-color: #16c78e;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 6px;
+  color: #fff;
+  text-align: center;
+}
+
+.card-content .btn2{
+  display: inline-block;
+  padding: 18px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 6px;
+  color: #042354;
+  text-align: center;
+}
+
+.card-content .flechaMas{
+  width: 0.8617rem;
+  height: 1.6rem;
+  object-fit: contain;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.btn-siguiente-container {
+  text-align: center; /* Centra el botón horizontalmente */
+  margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
+
+.btn-siguiente {
+  width: 50px; /* Establece el ancho deseado para el botón "Siguiente" */
+  height: 50px; /* Establece la altura deseada para el botón "Siguiente" */
+  /* Agrega otros estilos de diseño, como fondo, color de texto, bordes, etc., según tus preferencias */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .btn-siguiente-container {
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+}
+
+
+/* Modalidades de admision Section */
+
+.modalidades {
+  background-color: #ffffff;
+}
+
+
+/*SIMULACRO*/
+
+.simulacro .introduccion{
+  color: #042354;
+  font: normal 24px 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+:root {
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+
+.box p {
+  color: #737373;
+  font:  16px 'Montserrat', sans-serif;
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 30px 40px -20px #737373;
+  padding: 40px;
+  margin: 20px;
+}
+
+img {
+  float: right;
+}
+
+@media (max-width: 450px) {
+  .box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+    text-align: center;
+    height: 180px;
+  }
+}
+
+.costo {
+  border-top: 3px solid #042354;
+}
+.estudiante {
+  border-top: 3px solid #042354;
+}
+.inscripciones {
+  border-top: 3px solid #042354;
+}
+.calendario {
+  border-top: 3px solid #042354;
+}
+
+h2 {
+  color: #042354;
+  font-weight: var(--weight3);
+}
+
+.row1-container .imagen {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 950px) {
+  .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-down {
+    position: relative;
+    top: 150px;
+  }
+  .box {
+    width: 20%;
+
+  }
+
+}
+
+/*footer*/
+
+.footer {
+  background-color: #042354;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding: 25px;
+  height: auto;
+  width: 80vw;
+}
+
+.Redes {
+  width: 50%;
+}
+
+.Contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.Contacto p {
+  color: #fff;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.2px;
+}
+
+.Contacto img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.contacto_ {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.footer h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.Icons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.Icons img {
+  height: 45px;
+  width: 45px;
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer h2{
+    font-size: 35px;
+  }
+  .Contacto {
+    align-items: start;
+  }
+  .footer{
+    gap: 25px;
+  }
+}
